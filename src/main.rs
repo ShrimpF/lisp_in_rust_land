@@ -1,9 +1,10 @@
+use risp::env;
 use risp::*;
 use std::io::Write;
 use std::*;
 
 fn main() {
-  let env = &mut default_env();
+  let env = &mut env::default_env();
   loop {
     print!("risp > ");
     io::stdout().flush().unwrap();
